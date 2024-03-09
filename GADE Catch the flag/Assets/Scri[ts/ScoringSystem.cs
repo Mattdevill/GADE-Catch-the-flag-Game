@@ -5,12 +5,15 @@ using TMPro;
 
 public class ScoringSystem : MonoBehaviour
 {
-    public static int blueScore = 0;
-    public static int redScore = 0;
+    public TextMeshProUGUI playerScoreText;
+    public int playerScore;
+
+    //public static int blueScore = 0;
+    //public static int redScore = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerScoreText.text = "Player:" + playerScore;
     }
 
     // Update is called once per frame
@@ -23,7 +26,7 @@ public class ScoringSystem : MonoBehaviour
     {
         if(collision.transform.name == "RedBase")
         {
-
+            
         }
     }
 
