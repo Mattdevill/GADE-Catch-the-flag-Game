@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ScoringSystem : MonoBehaviour
 {
+    public static int blueScore = 0;
+    public static int redScore = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,15 @@ public class ScoringSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.transform.name == "RedBase")
+        {
+
+        }
+    }
+
 }

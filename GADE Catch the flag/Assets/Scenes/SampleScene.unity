@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 856158298}
   m_Layer: 5
   m_Name: Enemy Score
-  m_TagString: Untagged
+  m_TagString: EnemyScore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1597,7 +1597,7 @@ GameObject:
   - component: {fileID: 1510746812}
   m_Layer: 5
   m_Name: Player Score
-  m_TagString: Untagged
+  m_TagString: PlayerScore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

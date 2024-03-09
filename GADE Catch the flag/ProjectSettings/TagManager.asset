@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - BlueFlag
+  - EnemyScore
+  - PlayerScore
   layers:
   - Default
   - TransparentFX
