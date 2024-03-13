@@ -8,6 +8,8 @@ TagManager:
   - BlueFlag
   - EnemyScore
   - PlayerScore
+  - RedBase
+  - BlueBase
   layers:
   - Default
   - TransparentFX
