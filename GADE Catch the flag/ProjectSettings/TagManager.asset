@@ -10,6 +10,7 @@ TagManager:
   - PlayerScore
   - RedBase
   - BlueBase
+  - RedFlag
   layers:
   - Default
   - TransparentFX
