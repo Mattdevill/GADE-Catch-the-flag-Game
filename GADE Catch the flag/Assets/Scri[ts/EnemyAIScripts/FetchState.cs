@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChaseState : State
+public class FetchState : State
 {
-    public AttackState attackState;
+    public ChaseState chaseState;
 
-    public bool IsInAttackRange;
+    public bool canSeePlayer;
+
+
     public override State RunCurrentState()
     {
-        if (IsInAttackRange)
+        if (canSeePlayer)
         {
-            return attackState;
+            return chaseState; 
         }
         else
         {
