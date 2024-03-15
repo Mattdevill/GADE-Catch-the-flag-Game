@@ -19,7 +19,6 @@ public class StateManager : MonoBehaviour
         if (nextState != null )
         {
             SwitchToNextState(nextState);
-            //Debug.Log(nextState);
         }
        
     }
