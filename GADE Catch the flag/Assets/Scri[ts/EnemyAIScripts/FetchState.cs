@@ -8,7 +8,6 @@ public class FetchState : State
 
     public bool canSeePlayer;
 
-
     public override State RunCurrentState()
     {
         if (canSeePlayer)
