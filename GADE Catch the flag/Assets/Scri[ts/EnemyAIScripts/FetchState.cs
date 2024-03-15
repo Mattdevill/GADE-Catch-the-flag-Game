@@ -14,6 +14,7 @@ public class FetchState : State
         {
             return chaseState; 
         }
+
         else
         {
             return this;
