@@ -19,6 +19,8 @@ public class ChaseState : State
     public LayerMask obctructionMask;
     public bool canSeePlayer;
 
+    public FetchState fetchState;
+
     public override State RunCurrentState()
     {
         if (IsInAttackRange)
@@ -28,9 +30,10 @@ public class ChaseState : State
         else
         {
             FieldOfView();
-            
+            //return this;
+            return fetchState;
 
-            return this;
+            //return this;
         }
     }
 
