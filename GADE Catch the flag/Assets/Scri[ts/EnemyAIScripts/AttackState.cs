@@ -4,9 +4,23 @@ using UnityEngine;
 
 public class AttackState : State
 {
+    public FetchPlayerFlagState fetchPlayerFlagState;
+
+    public bool isFlagInRange;
+
+
     public override State RunCurrentState()
     {
-        Debug.Log("Attack successfull");
-        return this;
+        if(isFlagInRange)
+        {
+            return fetchPlayerFlagState;
+        }
+
+        else
+        {
+            return this;
+        }
+        //Debug.Log("Attack successfull");
+        
     }
 }

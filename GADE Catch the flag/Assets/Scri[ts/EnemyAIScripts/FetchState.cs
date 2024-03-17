@@ -8,11 +8,20 @@ public class FetchState : State
 
     public bool canSeePlayer;
 
+    public ReturnToBaseState returnToBaseState;
+
+    public bool hasFlag;
+
     public override State RunCurrentState()
     {
         if (canSeePlayer)
         {
             return chaseState; 
+        }
+
+        if (hasFlag)
+        {
+            return returnToBaseState;
         }
 
         else
