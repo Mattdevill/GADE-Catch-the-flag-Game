@@ -24,14 +24,15 @@ public class FetchState : State
             return chaseState; 
         }
 
-        /*if (hasFlag)
+        if (hasFlag)
         {
             return returnToBaseState;
-        }*/
+        }
 
-        else
+        else 
         {
             canSeePlayer = false;
+            hasFlag = false;
             agent.SetDestination(redFlag.position);
             return this;
         }

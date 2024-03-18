@@ -4463,6 +4463,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 248716468072454770, guid: 478c262ecc0184a42a5d47c7314d9e38, type: 3}
+      propertyPath: redFlag
+      value: 
+      objectReference: {fileID: 507887336}
     - target: {fileID: 949908632618453717, guid: 478c262ecc0184a42a5d47c7314d9e38, type: 3}
       propertyPath: m_Layer
       value: 6
