@@ -6,6 +6,8 @@ using UnityEngine.AI;
 
 public class FetchState : State
 {
+    //public StateManager StateManagerScript;
+
     public ChaseState chaseState;
     public bool canSeePlayer;
 
@@ -15,6 +17,10 @@ public class FetchState : State
     public NavMeshAgent agent;
     public Transform redFlag;
 
+    /*private void Start()
+    {
+        StateManagerScript = GameObject.FindObjectOfType<StateManager>();
+    }*/
     public override State RunCurrentState()
     {
         //agent.SetDestination(redFlag.position);

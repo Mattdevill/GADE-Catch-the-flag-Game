@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 355508006556349637}
   - component: {fileID: 7587108195883090079}
   - component: {fileID: 4790007773223744408}
+  - component: {fileID: 66190820927862849}
   m_Layer: 0
   m_Name: BlueFlag
   m_TagString: BlueFlag
@@ -310,6 +311,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &66190820927862849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5001881888959996112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d9f6bb23788ba418a4e199ee90a8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blueFlag: {fileID: 0}
 --- !u!1 &8857837351913232689
 GameObject:
   m_ObjectHideFlags: 0

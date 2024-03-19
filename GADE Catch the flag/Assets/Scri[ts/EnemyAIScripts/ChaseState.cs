@@ -8,6 +8,8 @@ public class ChaseState : State
 {
     public AttackState attackState;
     public bool IsInAttackRange;
+    public bool canSeePlayer;
+    //public StateManager StateManagerScript;
 
     public NavMeshAgent agent;
     public Transform player;
@@ -17,9 +19,14 @@ public class ChaseState : State
     public float angle;
     public LayerMask targetMask;
     public LayerMask obctructionMask;
-    public bool canSeePlayer;
-
+   
     public FetchState fetchState;
+
+
+    /*private void Start()
+    {
+        StateManagerScript = GameObject.FindObjectOfType<StateManager>();
+    }*/
 
     public override State RunCurrentState()
     {
@@ -36,6 +43,11 @@ public class ChaseState : State
             //return this;
         }
     }
+
+    /*private void Update()
+    {
+        canSeePlayer = StateManagerScript.canSeePlayer;
+    }*/
 
     public void FieldOfView()
     {

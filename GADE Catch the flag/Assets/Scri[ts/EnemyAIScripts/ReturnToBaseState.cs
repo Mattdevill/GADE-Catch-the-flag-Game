@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class ReturnToBaseState : State
 {
+    //public StateManager StateManagerScript;
+
+    /*private void Start()
+    {
+        StateManagerScript = GameObject.FindObjectOfType<StateManager>();
+    }*/
     public override State RunCurrentState()
     {
         return this;

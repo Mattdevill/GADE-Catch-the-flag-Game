@@ -5,7 +5,12 @@ using UnityEngine;
 public class StateManager : MonoBehaviour
 {
     public State currentState;
+    /*public bool IsInAttackRange;
+    public bool isFlagInRange;
 
+    public bool hasFlag;*/
+
+    public bool canSeePlayer;
 
     void Update()
     {
