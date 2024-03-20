@@ -3086,6 +3086,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1609868938}
   redFlag: {fileID: 507887336}
+  IsInAttackRange: 0
+  canSeePlayer: 0
+  player: {fileID: 1520986182}
+  radius: 10
+  angle: 360
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 8
+  obctructionMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1647653525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4661,7 +4672,7 @@ PrefabInstance:
     - target: {fileID: 3364823436788610397, guid: f77649afbd976ca4c854e1702a760a5f, type: 3}
       propertyPath: playerScoreText
       value: 
-      objectReference: {fileID: 856158298}
+      objectReference: {fileID: 1776048568}
     - target: {fileID: 6697370669703196756, guid: f77649afbd976ca4c854e1702a760a5f, type: 3}
       propertyPath: m_Name
       value: RedBase
