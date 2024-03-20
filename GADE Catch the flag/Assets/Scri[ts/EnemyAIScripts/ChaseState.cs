@@ -4,7 +4,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ChaseState : State
+/*public class ChaseState : State
 {
     public AttackState attackState;
     public bool IsInAttackRange;
@@ -28,7 +28,7 @@ public class ChaseState : State
         StateManagerScript = GameObject.FindObjectOfType<StateManager>();
     }*/
 
-    public override State RunCurrentState()
+    /*public override State RunCurrentState()
     {
         if (IsInAttackRange)
         {
@@ -49,7 +49,7 @@ public class ChaseState : State
         canSeePlayer = StateManagerScript.canSeePlayer;
     }*/
 
-    public void FieldOfView()
+    /*public void FieldOfView()
     {
         Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask);
 
@@ -82,4 +82,4 @@ public class ChaseState : State
             canSeePlayer = false;
         }
     }
-}
+}*/

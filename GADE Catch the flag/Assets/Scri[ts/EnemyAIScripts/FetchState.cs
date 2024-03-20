@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class FetchState : State
+/*public class FetchState : State
 {
     //public StateManager StateManagerScript;
 
@@ -21,7 +21,7 @@ public class FetchState : State
     {
         StateManagerScript = GameObject.FindObjectOfType<StateManager>();
     }*/
-    public override State RunCurrentState()
+    /*public override State RunCurrentState()
     {
         //agent.SetDestination(redFlag.position);
         //return this;
@@ -51,4 +51,4 @@ public class FetchState : State
             this.transform.parent = other.transform;
         }
     }
-}
+}*/

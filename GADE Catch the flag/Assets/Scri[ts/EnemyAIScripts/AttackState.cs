@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackState : State
+/*public class AttackState : State
 {
     public FetchPlayerFlagState fetchPlayerFlagState;
     //public StateManager StateManagerScript;
@@ -14,7 +14,7 @@ public class AttackState : State
         StateManagerScript = GameObject.FindObjectOfType<StateManager>();
     }*/
 
-    public override State RunCurrentState()
+    /*public override State RunCurrentState()
     {
         if(isFlagInRange)
         {
@@ -28,4 +28,4 @@ public class AttackState : State
         //Debug.Log("Attack successfull");
         
     }
-}
+}*/

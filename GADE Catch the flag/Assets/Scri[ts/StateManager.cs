@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateManager : MonoBehaviour
+/*public class StateManager : MonoBehaviour
 {
     public State currentState;
     /*public bool IsInAttackRange;
@@ -10,7 +10,7 @@ public class StateManager : MonoBehaviour
 
     public bool hasFlag;*/
 
-    public bool canSeePlayer;
+    /*public bool canSeePlayer;
 
     void Update()
     {
@@ -32,4 +32,4 @@ public class StateManager : MonoBehaviour
     {
         currentState = nextState;
     }
-}
+}*/

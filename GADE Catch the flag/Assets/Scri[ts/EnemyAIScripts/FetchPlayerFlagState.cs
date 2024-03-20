@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FetchPlayerFlagState : State
+/*public class FetchPlayerFlagState : State
 {
     //public StateManager StateManagerScript;
 
@@ -10,8 +10,8 @@ public class FetchPlayerFlagState : State
     {
         StateManagerScript = GameObject.FindObjectOfType<StateManager>();
     }*/
-    public override State RunCurrentState()
+    /*public override State RunCurrentState()
     {
         return this;
     }
-}
+}*/
