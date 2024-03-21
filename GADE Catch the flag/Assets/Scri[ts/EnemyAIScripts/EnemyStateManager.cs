@@ -12,8 +12,8 @@ public class EnemyStateManager : MonoBehaviour
     public Transform redFlag;
 
     //For Chase State
-    public bool IsInAttackRange;
-    public bool canSeePlayer;
+    public bool IsInAttackRange = false;
+    public bool canSeePlayer = false;
     public Transform player;
     public float radius;
     [Range(0, 360)]
@@ -44,15 +44,17 @@ public class EnemyStateManager : MonoBehaviour
 
     void Update()
     {
+        FieldOfView();
+
         // Handle input or other conditions to determine state transitions
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SetState(EnemyState.ReturnToBase);
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+        /*else if (Input.GetKeyDown(KeyCode.A))
         {
             SetState(EnemyState.Attack);
-        }
+        }*/
         else if (canSeePlayer == true)
         {
             SetState(EnemyState.Chase);
@@ -93,8 +95,6 @@ public class EnemyStateManager : MonoBehaviour
             case EnemyState.Chase:
                 // Code for chase state
 
-                 FieldOfView();
-               
                 break;
             case EnemyState.ReturnToBase:
                 // Code for jumping state
@@ -153,9 +153,10 @@ public class EnemyStateManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "RedFlag")
+        if (other.tag == "RedFlag")
         {
-            this.transform.parent = other.transform;
+            other.transform.SetParent(this.transform);
+            Debug.Log("RedFlag Pick Up");
         }
     }
 }
