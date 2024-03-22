@@ -12,7 +12,7 @@ public class EnemyStateManager : MonoBehaviour
     public Transform redFlag;
 
     //For Chase State
-    public bool IsInAttackRange = false;
+    public bool isInAttackRange = false;
     public bool canSeePlayer = false;
     public Transform player;
     public float radius;
@@ -20,6 +20,10 @@ public class EnemyStateManager : MonoBehaviour
     public float angle;
     public LayerMask targetMask;
     public LayerMask obctructionMask;
+
+    //For ReturnToBase State
+    public Transform redBase;
+    public bool hasRedFlag = false;
 
     // Define your player states here
     public enum EnemyState
@@ -47,7 +51,7 @@ public class EnemyStateManager : MonoBehaviour
         FieldOfView();
 
         // Handle input or other conditions to determine state transitions
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (hasRedFlag == true)
         {
             SetState(EnemyState.ReturnToBase);
         }
@@ -88,7 +92,16 @@ public class EnemyStateManager : MonoBehaviour
         {
             case EnemyState.FetchRedFlag:
                 // Code for FetchRedFag state
+
                 agent.SetDestination(redFlag.position);
+               
+                break;
+
+            case EnemyState.ReturnToBase:
+                // Code for jumping state
+
+                agent.SetDestination(redBase.position);
+                //hasRedFlag = true;
 
                 break;
 
@@ -96,15 +109,17 @@ public class EnemyStateManager : MonoBehaviour
                 // Code for chase state
 
                 break;
-            case EnemyState.ReturnToBase:
-                // Code for jumping state
-                break;
+
             case EnemyState.Attack:
                 // Code for attacking state
+
                 break;
+
             case EnemyState.FetchBlueFlag:
                 // Code for fetching blue flag state
+
                 break;
+
                 // Add more cases for additional states
         }
     }
@@ -156,6 +171,7 @@ public class EnemyStateManager : MonoBehaviour
         if (other.tag == "RedFlag")
         {
             other.transform.SetParent(this.transform);
+            hasRedFlag = true;
             Debug.Log("RedFlag Pick Up");
         }
     }

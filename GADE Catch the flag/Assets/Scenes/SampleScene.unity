@@ -753,6 +753,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246885346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &304950769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1071899081228832492, guid: f77649afbd976ca4c854e1702a760a5f, type: 3}
+  m_PrefabInstance: {fileID: 5849271525672371927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &341832636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,7 +3091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1609868938}
   redFlag: {fileID: 507887336}
-  IsInAttackRange: 0
+  isInAttackRange: 0
   canSeePlayer: 0
   player: {fileID: 1520986182}
   radius: 10
@@ -3097,6 +3102,8 @@ MonoBehaviour:
   obctructionMask:
     serializedVersion: 2
     m_Bits: 256
+  redBase: {fileID: 304950769}
+  hasRedFlag: 0
 --- !u!1 &1647653525
 GameObject:
   m_ObjectHideFlags: 0
