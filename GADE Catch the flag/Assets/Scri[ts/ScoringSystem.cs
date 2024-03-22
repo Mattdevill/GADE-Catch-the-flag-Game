@@ -35,7 +35,7 @@ public class ScoringSystem : MonoBehaviour
            playerScoreText.text = "Player:" + playerScore;
 
         }
-        Debug.Log("Point Test");
+        //Debug.Log("Point Test");
 
         if (other.CompareTag("RedFlag"))
         {

@@ -4373,6 +4373,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 618053271967929930, guid: 98335ed884142014583a153a9c49f600, type: 3}
+      propertyPath: m_TagString
+      value: PlayerScore
+      objectReference: {fileID: 0}
     - target: {fileID: 748128312308538857, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -4380,6 +4384,10 @@ PrefabInstance:
     - target: {fileID: 1163110058318511350, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163110058318511350, guid: 98335ed884142014583a153a9c49f600, type: 3}
+      propertyPath: m_TagString
+      value: EnemyScore
       objectReference: {fileID: 0}
     - target: {fileID: 1676505234180597540, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_Layer

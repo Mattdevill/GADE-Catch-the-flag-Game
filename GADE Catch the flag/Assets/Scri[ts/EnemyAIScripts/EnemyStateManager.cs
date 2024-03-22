@@ -174,5 +174,11 @@ public class EnemyStateManager : MonoBehaviour
             hasRedFlag = true;
             Debug.Log("RedFlag Pick Up");
         }
+
+        /*if(other.tag == "Player")
+        {
+            other.transform.parent = null;
+            hasRedFlag = false;
+        }*/
     }
 }
