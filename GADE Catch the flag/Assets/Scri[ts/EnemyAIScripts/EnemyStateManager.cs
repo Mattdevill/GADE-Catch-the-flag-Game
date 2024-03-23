@@ -47,7 +47,7 @@ public class EnemyStateManager : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         FieldOfView();
 
         // Handle input or other conditions to determine state transitions
@@ -59,7 +59,7 @@ public class EnemyStateManager : MonoBehaviour
         {
             SetState(EnemyState.Attack);
         }*/
-        else if (canSeePlayer == true)
+        else if (canSeePlayer == true && hasRedFlag == false)
         {
             SetState(EnemyState.Chase);
         }
@@ -108,6 +108,8 @@ public class EnemyStateManager : MonoBehaviour
             case EnemyState.Chase:
                 // Code for chase state
 
+                agent.SetDestination(player.position);
+
                 break;
 
             case EnemyState.Attack:
@@ -148,7 +150,7 @@ public class EnemyStateManager : MonoBehaviour
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obctructionMask))
                 {
                     canSeePlayer = true;
-                    agent.SetDestination(player.position);
+                    //agent.SetDestination(player.position);
                 }
                 else
                 {
