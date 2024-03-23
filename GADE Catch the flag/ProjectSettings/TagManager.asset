@@ -11,6 +11,8 @@ TagManager:
   - RedBase
   - BlueBase
   - RedFlag
+  - enemyCollision
+  - playerCollision
   layers:
   - Default
   - TransparentFX

@@ -29,15 +29,15 @@ public class ScoringSystem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("BlueFlag"))
-        { 
-           playerScore++;
+        if (other.CompareTag("BlueFlag") && this.CompareTag("BlueBase"))
+        {
+            playerScore++;
            playerScoreText.text = "Player:" + playerScore;
 
         }
         //Debug.Log("Point Test");
 
-        if (other.CompareTag("RedFlag"))
+        if (other.CompareTag("RedFlag") && this.CompareTag("RedBase"))
         {
             enemyScore++;
             enemyScoreText.text = "Enemy:" + enemyScore;

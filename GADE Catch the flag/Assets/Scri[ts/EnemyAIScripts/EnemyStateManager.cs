@@ -9,12 +9,13 @@ public class EnemyStateManager : MonoBehaviour
 {
     //For FetchRedFlag State
     public NavMeshAgent agent;
-    public Transform redFlag;
+    public GameObject redFlag;
+    public GameObject blueFlag;
 
     //For Chase State
     public bool isInAttackRange = false;
     public bool canSeePlayer = false;
-    public Transform player;
+    public GameObject player;
     public float radius;
     [Range(0, 360)]
     public float angle;
@@ -22,7 +23,7 @@ public class EnemyStateManager : MonoBehaviour
     public LayerMask obctructionMask;
 
     //For ReturnToBase State
-    public Transform redBase;
+    public GameObject redBase;
     public bool hasRedFlag = false;
 
     // Define your player states here
@@ -93,14 +94,15 @@ public class EnemyStateManager : MonoBehaviour
             case EnemyState.FetchRedFlag:
                 // Code for FetchRedFag state
 
-                agent.SetDestination(redFlag.position);
+                agent.SetDestination(redFlag.transform.position);
+                hasRedFlag = false;
                
                 break;
 
             case EnemyState.ReturnToBase:
                 // Code for jumping state
 
-                agent.SetDestination(redBase.position);
+                agent.SetDestination(redBase.transform.position);
                 //hasRedFlag = true;
 
                 break;
@@ -108,7 +110,7 @@ public class EnemyStateManager : MonoBehaviour
             case EnemyState.Chase:
                 // Code for chase state
 
-                agent.SetDestination(player.position);
+                agent.SetDestination(player.transform.position);
 
                 break;
 
@@ -176,11 +178,20 @@ public class EnemyStateManager : MonoBehaviour
             hasRedFlag = true;
             Debug.Log("RedFlag Pick Up");
         }
-
-        /*if(other.tag == "Player")
+        else
         {
-            other.transform.parent = null;
             hasRedFlag = false;
+        }
+
+        //to drop red flag when attacking the enemy
+        /*if(other.tag == "playerCollision")
+        {
+            redFlag.transform.parent = null;
+            hasRedFlag = false;
+
+            blueFlag.transform.parent = null;
+            Debug.Log("Test flag drop");
         }*/
+        
     }
 }
