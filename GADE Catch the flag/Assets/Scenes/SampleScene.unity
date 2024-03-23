@@ -2996,20 +2996,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1422611388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422611385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74302bdf20368e847a7825d12e324444, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redFlag: {fileID: 786986843}
-  blueFlag: {fileID: 397804349}
 --- !u!1 &1451294816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3020,7 +3006,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1451294817}
   - component: {fileID: 1451294818}
-  - component: {fileID: 1451294819}
   m_Layer: 7
   m_Name: enemyCollision
   m_TagString: enemyCollision
@@ -3066,20 +3051,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1451294819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451294816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74302bdf20368e847a7825d12e324444, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redFlag: {fileID: 786986843}
-  blueFlag: {fileID: 397804349}
 --- !u!1 &1460462084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,9 +4619,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1593215484000945858, guid: 98335ed884142014583a153a9c49f600, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1422611387}
-    - targetCorrespondingSourceObject: {fileID: 1593215484000945858, guid: 98335ed884142014583a153a9c49f600, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1422611388}
   m_SourcePrefab: {fileID: 100100000, guid: 98335ed884142014583a153a9c49f600, type: 3}
 --- !u!1001 &3745055914561196245
 PrefabInstance:
