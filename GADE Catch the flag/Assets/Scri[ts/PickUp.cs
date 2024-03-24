@@ -29,7 +29,7 @@ public class PickUp : MonoBehaviour
                 this.transform.parent = other.transform;
 
                 checkFlag = true;
-                Debug.Log("test");
+                //Debug.Log("test");
             }
 
             

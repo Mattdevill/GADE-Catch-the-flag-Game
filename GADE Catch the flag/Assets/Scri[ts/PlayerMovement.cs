@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float gravity = -9.81f;
 
+    
+
     // Update is called once per frame
     void Update()
     {

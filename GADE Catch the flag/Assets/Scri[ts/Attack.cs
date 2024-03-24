@@ -8,6 +8,9 @@ public class Attack : MonoBehaviour
     public GameObject blueFlag;
 
     public GameObject enemy;
+    public GameObject player;
+
+     
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,8 @@ public class Attack : MonoBehaviour
             blueFlag.transform.parent = null;
 
             enemy.GetComponent<EnemyStateManager>().hasRedFlag = false;
+            player.GetComponent<EnemyStateManager>().hasBlueFlag = false;
+
 
             Debug.Log("Test flag drop");
         }

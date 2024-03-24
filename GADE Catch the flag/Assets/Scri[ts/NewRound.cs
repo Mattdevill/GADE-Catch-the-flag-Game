@@ -40,10 +40,10 @@ public class NewRound : MonoBehaviour
             //redFlag.transform.parent = null;
 
             //enemy reset
-            enemy.transform.position = new Vector3(0f , 1.07f, 52.5f);
+            //enemy.transform.position = new Vector3(0f , 1.07f, 52.5f);
 
             //player reset
-            player.transform.position = new Vector3(0f, 1.07f, -52.5f);
+            //player.transform.position = new Vector3(0f, 1.07f, -52.5f);
         }
 
         // for redFlag
@@ -59,10 +59,10 @@ public class NewRound : MonoBehaviour
             redFlag.transform.parent = null;
 
             //enemy reset
-            enemy.transform.position = new Vector3(0f, 1.07f, 52.5f);
+            //enemy.transform.position = new Vector3(0f, 1.07f, 52.5f);
 
             //player reset
-            player.transform.position = new Vector3(0f, 1.07f, -52.5f);
+            //player.transform.position = new Vector3(0f, 1.07f, -52.5f);
         }
     }
 

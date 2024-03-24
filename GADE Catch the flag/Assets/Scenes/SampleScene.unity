@@ -3078,6 +3078,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6722760698686769115, guid: 98335ed884142014583a153a9c49f600, type: 3}
   m_PrefabInstance: {fileID: 2981060292734846611}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1520986185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863714556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74302bdf20368e847a7825d12e324444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redFlag: {fileID: 786986843}
+  blueFlag: {fileID: 397804349}
+  enemy: {fileID: 1609868933}
+  player: {fileID: 863714556}
 --- !u!1 &1609868933 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4192118499063072829, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
@@ -3143,6 +3159,7 @@ MonoBehaviour:
     m_Bits: 256
   redBase: {fileID: 748811502}
   hasRedFlag: 0
+  hasBlueFlag: 0
 --- !u!114 &1609868943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3158,6 +3175,7 @@ MonoBehaviour:
   redFlag: {fileID: 786986843}
   blueFlag: {fileID: 397804349}
   enemy: {fileID: 1609868933}
+  player: {fileID: 863714556}
 --- !u!1 &1647653525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4543,7 +4561,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 1593215484000945858, guid: 98335ed884142014583a153a9c49f600, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3180610304682497869, guid: 98335ed884142014583a153a9c49f600, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520986185}
   m_SourcePrefab: {fileID: 100100000, guid: 98335ed884142014583a153a9c49f600, type: 3}
 --- !u!1001 &3745055914561196245
 PrefabInstance:

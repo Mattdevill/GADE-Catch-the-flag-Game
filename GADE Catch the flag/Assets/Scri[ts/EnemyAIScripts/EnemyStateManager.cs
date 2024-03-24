@@ -21,10 +21,12 @@ public class EnemyStateManager : MonoBehaviour
     public float angle;
     public LayerMask targetMask;
     public LayerMask obctructionMask;
+    //public LayerMask blueFlagMask;
 
     //For ReturnToBase State
     public GameObject redBase;
     public bool hasRedFlag = false;
+    public bool hasBlueFlag = false;
 
     // Define your player states here
     public enum EnemyState
@@ -32,7 +34,6 @@ public class EnemyStateManager : MonoBehaviour
         FetchRedFlag,
         ReturnToBase,
         Chase,
-        Attack,
         FetchBlueFlag
 
         // Add more states as needed
@@ -56,18 +57,14 @@ public class EnemyStateManager : MonoBehaviour
         {
             SetState(EnemyState.ReturnToBase);
         }
-        /*else if (Input.GetKeyDown(KeyCode.A))
-        {
-            SetState(EnemyState.Attack);
-        }*/
         else if (canSeePlayer == true && hasRedFlag == false)
         {
             SetState(EnemyState.Chase);
         }
-        else if (Input.GetKey(KeyCode.V))
+        /*else if (hasRedFlag == false && hasBlueFlag == false && canSeePlayer == true)
         {
             SetState(EnemyState.FetchBlueFlag);
-        }
+        }*/
         else
         {
             SetState(EnemyState.FetchRedFlag);
@@ -114,15 +111,12 @@ public class EnemyStateManager : MonoBehaviour
 
                 break;
 
-            case EnemyState.Attack:
-                // Code for attacking state
-
-                break;
-
-            case EnemyState.FetchBlueFlag:
+            /*case EnemyState.FetchBlueFlag:
                 // Code for fetching blue flag state
 
-                break;
+                //agent.SetDestination(blueFlag.transform.position);
+
+                break;*/
 
                 // Add more cases for additional states
         }
@@ -182,16 +176,6 @@ public class EnemyStateManager : MonoBehaviour
         {
             hasRedFlag = false;
         }
-
-        //to drop red flag when attacking the enemy
-        /*if(other.tag == "playerCollision")
-        {
-            redFlag.transform.parent = null;
-            hasRedFlag = false;
-
-            blueFlag.transform.parent = null;
-            Debug.Log("Test flag drop");
-        }*/
         
     }
 }
