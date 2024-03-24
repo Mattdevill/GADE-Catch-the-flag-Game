@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    public bool checkFlag;
+    /*public bool checkFlag;
+    //public bool hasBlueFlag = false;
+
     void Start()
     {
 
@@ -34,7 +36,7 @@ public class PickUp : MonoBehaviour
 
             
         }
-    }
+    }*/
 
 }
  

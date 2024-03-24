@@ -26,7 +26,7 @@ public class EnemyStateManager : MonoBehaviour
     //For ReturnToBase State
     public GameObject redBase;
     public bool hasRedFlag = false;
-    public bool hasBlueFlag = false;
+    //public bool hasBlueFlag = false;
 
     // Define your player states here
     public enum EnemyState

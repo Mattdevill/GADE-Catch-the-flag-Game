@@ -34,7 +34,7 @@ public class Attack : MonoBehaviour
             blueFlag.transform.parent = null;
 
             enemy.GetComponent<EnemyStateManager>().hasRedFlag = false;
-            player.GetComponent<EnemyStateManager>().hasBlueFlag = false;
+            player.GetComponent<PlayerMovement>().checkFlag = false;
 
 
             Debug.Log("Test flag drop");

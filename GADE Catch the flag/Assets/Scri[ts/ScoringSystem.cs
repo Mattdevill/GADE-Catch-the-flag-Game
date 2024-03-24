@@ -11,6 +11,8 @@ public class ScoringSystem : MonoBehaviour
     public TextMeshProUGUI enemyScoreText;
     public int enemyScore = 0;
 
+    public TextMeshProUGUI winnerText;
+
     //public static int blueScore = 0;
     //public static int redScore = 0;
     // Start is called before the first frame update
@@ -25,13 +27,24 @@ public class ScoringSystem : MonoBehaviour
     {
         playerScoreText.text = "Player:" + playerScore.ToString();
         enemyScoreText.text = "Enemy:" + enemyScore.ToString();
+
+        if(playerScore == 5)
+        {
+            winnerText.text = "Blue Wins!";
+        }
+
+        if(enemyScore == 5)
+        {
+            winnerText.text = "Red Wins!";
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("BlueFlag") && this.CompareTag("BlueBase"))
         {
-            playerScore++;
+           playerScore++;
            playerScoreText.text = "Player:" + playerScore;
 
         }

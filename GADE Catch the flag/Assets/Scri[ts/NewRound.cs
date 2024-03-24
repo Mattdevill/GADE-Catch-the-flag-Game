@@ -30,6 +30,7 @@ public class NewRound : MonoBehaviour
         if (other.gameObject.tag == "BlueBase")
         {
             enemy.GetComponent<EnemyStateManager>().hasRedFlag = false;
+            player.GetComponent<PlayerMovement>().checkFlag = false;
 
             //blueFlag reset
             blueFlag.transform.position = new Vector3(-0.021f, -0.08f, 63.965f);
