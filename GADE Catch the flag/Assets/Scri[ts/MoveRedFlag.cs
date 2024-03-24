@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveRedFlag : MonoBehaviour
 {
     //public StateManager StateManagerScript;
-     
+    //public bool playerHasRedFlag = false;
 
     public Transform redFlag;
 
