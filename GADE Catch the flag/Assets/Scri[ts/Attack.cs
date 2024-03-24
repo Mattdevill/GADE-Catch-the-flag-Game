@@ -7,6 +7,8 @@ public class Attack : MonoBehaviour
     public GameObject redFlag;
     public GameObject blueFlag;
 
+    public GameObject enemy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +21,18 @@ public class Attack : MonoBehaviour
         
     }
 
-    /*public void OnTriggerEnter(Collider other)
+    public void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "playerCollision")
+        if (collision.collider.CompareTag("Player"))
         {
             redFlag.transform.parent = null;
             //hasRedFlag = false;
 
             blueFlag.transform.parent = null;
+
+            enemy.GetComponent<EnemyStateManager>().hasRedFlag = false;
+
             Debug.Log("Test flag drop");
         }
-    }*/
+    }
 }

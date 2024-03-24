@@ -29,6 +29,8 @@ public class NewRound : MonoBehaviour
         // for blueFlag
         if (other.gameObject.tag == "BlueBase")
         {
+            enemy.GetComponent<EnemyStateManager>().hasRedFlag = false;
+
             //blueFlag reset
             blueFlag.transform.position = new Vector3(-0.021f, -0.08f, 63.965f);
             blueFlag.transform.parent = null;
@@ -47,6 +49,7 @@ public class NewRound : MonoBehaviour
         // for redFlag
         if (other.gameObject.tag == "RedBase")
         {
+            enemy.GetComponent<EnemyStateManager>().hasRedFlag = false;
             //blueFlag reset
             //blueFlag.transform.position = new Vector3(-0.021f, -0.08f, 63.965f);
             //blueFlag.transform.parent = null;
