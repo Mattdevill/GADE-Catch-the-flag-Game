@@ -2158,8 +2158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 863714556}
   enemy: {fileID: 1609868933}
-  redBase: {fileID: 748811502}
-  blueBase: {fileID: 478047363}
   redFlag: {fileID: 786986843}
   blueFlag: {fileID: 397804349}
   roundChange: 0
@@ -3141,82 +3139,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4192118499063072829, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
   m_PrefabInstance: {fileID: 128087551611093142}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1609868936
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609868933}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 84
-  m_CollisionDetection: 0
 --- !u!195 &1609868938 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 1397715015076242509, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
   m_PrefabInstance: {fileID: 128087551611093142}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1609868941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609868933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f85138c9a6d3c8428181161545fa91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1609868938}
-  redFlag: {fileID: 786986843}
-  blueFlag: {fileID: 397804349}
-  isInAttackRange: 0
-  canSeePlayer: 0
-  player: {fileID: 863714556}
-  radius: 10
-  angle: 360
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 8
-  obctructionMask:
-    serializedVersion: 2
-    m_Bits: 256
-  redBase: {fileID: 748811502}
-  hasRedFlag: 0
---- !u!114 &1609868943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609868933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74302bdf20368e847a7825d12e324444, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  redFlag: {fileID: 786986843}
-  blueFlag: {fileID: 397804349}
-  enemy: {fileID: 1609868933}
-  player: {fileID: 863714556}
 --- !u!1 &1647653525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,7 +4307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165772350234550404, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -45.2
+      value: -48.8
       objectReference: {fileID: 0}
     - target: {fileID: 2165772350234550404, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4414,6 +4341,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3536087781855679822, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 863714556}
+    - target: {fileID: 3536087781855679822, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: redFlag
+      value: 
+      objectReference: {fileID: 786986843}
+    - target: {fileID: 3536087781855679822, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: blueFlag
+      value: 
+      objectReference: {fileID: 397804349}
     - target: {fileID: 3735550807276047246, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4432,7 +4371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4192118499063072829, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4192118499063072829, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_TagString
@@ -4442,6 +4381,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4410495514314175973, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 863714556}
+    - target: {fileID: 4410495514314175973, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: redBase
+      value: 
+      objectReference: {fileID: 748811502}
+    - target: {fileID: 4410495514314175973, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: redFlag
+      value: 
+      objectReference: {fileID: 786986843}
+    - target: {fileID: 4410495514314175973, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: blueFlag
+      value: 
+      objectReference: {fileID: 397804349}
     - target: {fileID: 4561802560517121539, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: agent
       value: 
@@ -4519,16 +4474,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 5799236859080293473, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4192118499063072829, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1609868936}
-    - targetCorrespondingSourceObject: {fileID: 4192118499063072829, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1609868941}
-    - targetCorrespondingSourceObject: {fileID: 4192118499063072829, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1609868943}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
 --- !u!1001 &2597998901018635085
 PrefabInstance:
