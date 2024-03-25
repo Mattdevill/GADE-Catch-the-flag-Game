@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor.SearchService;
+using UnityEditor.Build.Content;
+using UnityEngine.SceneManagement;
 
 public class ScoringSystem : MonoBehaviour
 {
@@ -39,12 +42,19 @@ public class ScoringSystem : MonoBehaviour
 
         if (playerScore == 5)
         {
-            winnerText.text = "Blue Wins!";
+            winnerText.text = "Blue Wins! Press R to restart";
         }
 
         if(enemyScore == 5)
         {
-            winnerText.text = "Red Wins!";
+            winnerText.text = "Red Wins! Press R to restart";
+        }
+
+        if(Input.GetKey(KeyCode.R))
+        {
+            int GameReset = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(GameReset);
         }
 
         if(roundChange == true)
