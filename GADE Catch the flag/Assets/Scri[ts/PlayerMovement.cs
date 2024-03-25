@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //Script to allow the player to move using WASD.
+
     public CharacterController controller;
 
     public float speed = 12f;
@@ -14,8 +16,6 @@ public class PlayerMovement : MonoBehaviour
 
     public bool checkFlag;
 
-
-    // Update is called once per frame
     void Update()
     {
         float x = Input.GetAxis("Horizontal");
@@ -35,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
 
             this.transform.SetParent(null);
         }
-
-
     }
 
     private void OnTriggerStay(Collider other)
@@ -47,13 +45,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 other.transform.SetParent(this.transform);
 
-                //this.transform.parent = other.transform;
-
                 checkFlag = true;
-                //Debug.Log("test");
             }
-
-
         }
     }
 }

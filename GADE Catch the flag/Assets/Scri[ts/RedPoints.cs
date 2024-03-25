@@ -4,20 +4,9 @@ using UnityEngine;
 
 public class RedPoints : MonoBehaviour
 {
+    //Script to give the enemy points when the redFlag collides with the redBase.
+
     public ScoringSystem ScoringSystem;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,5 +17,4 @@ public class RedPoints : MonoBehaviour
             ScoringSystem.enemyScoreText.text = "Enemy:" + ScoringSystem.enemyScore;
         }
     }
-
 }

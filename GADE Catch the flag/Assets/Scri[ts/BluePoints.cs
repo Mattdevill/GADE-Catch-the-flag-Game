@@ -4,20 +4,9 @@ using UnityEngine;
 
 public class BluePoints : MonoBehaviour
 {
+    //Script to give the player points when the blueFlag collides with the blueBase.
+
     public ScoringSystem ScoringSystem;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,8 +18,5 @@ public class BluePoints : MonoBehaviour
             Debug.Log("Score test");
 
         }
-        //Debug.Log("Point Test");
-
-        
     }
 }

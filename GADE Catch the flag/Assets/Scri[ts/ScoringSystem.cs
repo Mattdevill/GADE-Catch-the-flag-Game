@@ -5,11 +5,10 @@ using TMPro;
 
 public class ScoringSystem : MonoBehaviour
 {
+    //Script that controlles the recording system for the game.
+
     public GameObject player;
     public GameObject enemy;
-
-    public GameObject redBase;
-    public GameObject blueBase;
 
     public GameObject redFlag;
     public GameObject blueFlag;
@@ -24,16 +23,12 @@ public class ScoringSystem : MonoBehaviour
 
     public TextMeshProUGUI winnerText;
 
-    //public static int blueScore = 0;
-    //public static int redScore = 0;
-    // Start is called before the first frame update
     void Start()
     {
         playerScoreText.text = "Player:" + playerScore;
         enemyScoreText.text = "Enemy:" + enemyScore;
     }
 
-    // Update is called once per frame
     void Update()
     {
         playerScoreText.text = "Player:" + playerScore.ToString();
@@ -41,7 +36,6 @@ public class ScoringSystem : MonoBehaviour
 
         playerScoreText.text = "Player:" + playerScore;
         enemyScoreText.text = "Enemy:" + enemyScore;
-
 
         if (playerScore == 5)
         {
@@ -65,19 +59,11 @@ public class ScoringSystem : MonoBehaviour
             enemy.GetComponent<EnemyStateManager>().hasRedFlag = false;
             player.GetComponent<PlayerMovement>().checkFlag = false;
 
-            //blueFlag reset
-            //blueFlag.transform.position = new Vector3(-0.021f, -0.08f, 63.965f);
-            //blueFlag.transform.parent = null;
-
             //redFlag reset
             redFlag.transform.position = new Vector3(-0.55f, -0.08f, -64.36f);
             redFlag.transform.parent = null;
 
             roundChange = false;
         }
-
     }
-
-    
-
 }

@@ -4,27 +4,9 @@ using UnityEngine;
 
 public class MoveRedFlag : MonoBehaviour
 {
-    //public StateManager StateManagerScript;
-    //public bool playerHasRedFlag = false;
+    //Script to move the redFlag back to start when the player presses E will in range of it.
 
     public Transform redFlag;
-
-    // Start is called before the first frame update
-    /*private void Start()
-    {
-        StateManagerScript = GameObject.FindObjectOfType<StateManager>();
-    }*/
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerStay(Collider other)
     {

@@ -4,27 +4,9 @@ using UnityEngine;
 
 public class MoveBlueFlag : MonoBehaviour
 {
-    //public StateManager StateManagerScript;
-
+    //Script to move the blueFlag back to start when the enemy collides with it.
 
     public Transform blueFlag;
-
-    // Start is called before the first frame update
-    /*private void Start()
-    {
-        StateManagerScript = GameObject.FindObjectOfType<StateManager>();
-    }*/
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     private void OnTriggerStay(Collider other)
     {
