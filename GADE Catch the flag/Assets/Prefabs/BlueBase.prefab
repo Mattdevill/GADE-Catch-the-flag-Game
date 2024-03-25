@@ -430,7 +430,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5362686609010323199}
   - component: {fileID: 2444298950127984348}
-  - component: {fileID: 8816854487211509530}
   m_Layer: 0
   m_Name: BlueBase
   m_TagString: BlueBase
@@ -483,20 +482,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.103228, y: 5.154762, z: 5.435257}
   m_Center: {x: 0.0688858, y: 2.0773804, z: -0.31243896}
---- !u!114 &8816854487211509530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3680536020152298019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9abe6d4438ced4b4aae692a7f290fac6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerScoreText: {fileID: 0}
-  playerScore: 67
 --- !u!1 &4231539047691375277
 GameObject:
   m_ObjectHideFlags: 0

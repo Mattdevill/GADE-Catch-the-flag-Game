@@ -34,7 +34,7 @@ public class EnemyStateManager : MonoBehaviour
         FetchRedFlag,
         ReturnToBase,
         Chase,
-        FetchBlueFlag
+        //FetchBlueFlag
 
         // Add more states as needed
     }

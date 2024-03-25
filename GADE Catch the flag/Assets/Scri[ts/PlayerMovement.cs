@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
             this.transform.SetParent(null);
         }
 
+
     }
 
     private void OnTriggerStay(Collider other)
