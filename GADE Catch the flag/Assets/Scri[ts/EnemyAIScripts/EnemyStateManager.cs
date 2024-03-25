@@ -21,12 +21,10 @@ public class EnemyStateManager : MonoBehaviour
     public float angle;
     public LayerMask targetMask;
     public LayerMask obctructionMask;
-    //public LayerMask blueFlagMask;
 
     //For ReturnToBase State
     public GameObject redBase;
     public bool hasRedFlag = false;
-    //public bool hasBlueFlag = false;
 
     // Define your player states here
     public enum EnemyState
@@ -34,7 +32,6 @@ public class EnemyStateManager : MonoBehaviour
         FetchRedFlag,
         ReturnToBase,
         Chase,
-        //FetchBlueFlag
 
         // Add more states as needed
     }
@@ -61,10 +58,7 @@ public class EnemyStateManager : MonoBehaviour
         {
             SetState(EnemyState.Chase);
         }
-        /*else if (hasRedFlag == false && hasBlueFlag == false && canSeePlayer == true)
-        {
-            SetState(EnemyState.FetchBlueFlag);
-        }*/
+        
         else
         {
             SetState(EnemyState.FetchRedFlag);
@@ -110,15 +104,6 @@ public class EnemyStateManager : MonoBehaviour
                 agent.SetDestination(player.transform.position);
 
                 break;
-
-            /*case EnemyState.FetchBlueFlag:
-                // Code for fetching blue flag state
-
-                //agent.SetDestination(blueFlag.transform.position);
-
-                break;*/
-
-                // Add more cases for additional states
         }
     }
 
@@ -146,7 +131,6 @@ public class EnemyStateManager : MonoBehaviour
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obctructionMask))
                 {
                     canSeePlayer = true;
-                    //agent.SetDestination(player.position);
                 }
                 else
                 {
@@ -170,12 +154,10 @@ public class EnemyStateManager : MonoBehaviour
         {
             other.transform.SetParent(this.transform);
             hasRedFlag = true;
-            Debug.Log("RedFlag Pick Up");
         }
         else
         {
             hasRedFlag = false;
         }
-        
     }
 }
