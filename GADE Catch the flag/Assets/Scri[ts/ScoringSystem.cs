@@ -28,7 +28,11 @@ public class ScoringSystem : MonoBehaviour
         playerScoreText.text = "Player:" + playerScore.ToString();
         enemyScoreText.text = "Enemy:" + enemyScore.ToString();
 
-        if(playerScore == 5)
+        playerScoreText.text = "Player:" + playerScore;
+        enemyScoreText.text = "Enemy:" + enemyScore;
+
+
+        if (playerScore == 5)
         {
             winnerText.text = "Blue Wins!";
         }
@@ -46,6 +50,7 @@ public class ScoringSystem : MonoBehaviour
         {
            playerScore++;
            playerScoreText.text = "Player:" + playerScore;
+           Debug.Log("Score test");
 
         }
         //Debug.Log("Point Test");

@@ -4631,6 +4631,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: playerCollision
       objectReference: {fileID: 0}
+    - target: {fileID: 1612546444313868477, guid: 98335ed884142014583a153a9c49f600, type: 3}
+      propertyPath: m_text
+      value: E to pick up. Q to drop. (May need to press E multiple times)
+      objectReference: {fileID: 0}
     - target: {fileID: 1676505234180597540, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_Layer
       value: 3
