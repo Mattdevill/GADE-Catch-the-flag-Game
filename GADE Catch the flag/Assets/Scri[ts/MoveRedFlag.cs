@@ -14,8 +14,6 @@ public class MoveRedFlag : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //this.transform.parent = other.transform;
-
                 redFlag.transform.position = new Vector3(-0.55f, -0.08f, -64.36f); 
             }
         }

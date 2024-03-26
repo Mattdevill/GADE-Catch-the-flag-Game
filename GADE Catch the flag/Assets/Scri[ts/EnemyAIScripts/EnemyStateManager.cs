@@ -47,6 +47,7 @@ public class EnemyStateManager : MonoBehaviour
 
     void Update()
     {   
+        //Runs the FieldOfView method that allows the enemy to see the player
         FieldOfView();
 
         // Handle input or other conditions to determine state transitions
@@ -68,7 +69,7 @@ public class EnemyStateManager : MonoBehaviour
         PerformStateBehavior();
     }
 
-    // Method to set the current state
+    // The method used to set the current state
     private void SetState(EnemyState newState)
     {
         currentState = newState;
@@ -76,7 +77,7 @@ public class EnemyStateManager : MonoBehaviour
         EnterState();
     }
 
-    // Method to handle state-specific behavior
+    // The method to handle state-specific behavior
     private void PerformStateBehavior()
     {
         // Implement behavior specific to each state
@@ -94,7 +95,6 @@ public class EnemyStateManager : MonoBehaviour
                 // Code for jumping state
 
                 agent.SetDestination(redBase.transform.position);
-                //hasRedFlag = true;
 
                 break;
 
@@ -148,6 +148,7 @@ public class EnemyStateManager : MonoBehaviour
         }
     }
 
+    // the code to get the enemy to pickup the red flag
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "RedFlag")

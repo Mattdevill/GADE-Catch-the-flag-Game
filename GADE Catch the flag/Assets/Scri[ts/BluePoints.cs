@@ -15,8 +15,6 @@ public class BluePoints : MonoBehaviour
             ScoringSystem.roundChange = true;
             ScoringSystem.playerScore++;
             ScoringSystem.playerScoreText.text = "Player:" + ScoringSystem.playerScore;
-            Debug.Log("Score test");
-
         }
     }
 }

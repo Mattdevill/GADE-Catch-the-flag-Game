@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class ScoringSystem : MonoBehaviour
 {
-    //Script that controlles the recording system for the game.
+    //Script that controlles the scoring system for the game.
 
     public GameObject player;
     public GameObject enemy;
