@@ -4283,7 +4283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1397715015076242509, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_Speed
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1397715015076242509, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_Height
@@ -4296,6 +4296,10 @@ PrefabInstance:
     - target: {fileID: 1397715015076242509, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_BaseOffset
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397715015076242509, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: m_Acceleration
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2165772350234550404, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4385,6 +4389,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 863714556}
+    - target: {fileID: 4410495514314175973, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
+      propertyPath: radius
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4410495514314175973, guid: ede8710f48e8ca34cb9cbe6efbab15b8, type: 3}
       propertyPath: redBase
       value: 
@@ -4595,7 +4603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1612546444313868477, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_text
-      value: E to pick up. (May need multiple clicks).
+      value: E to pick up. (May need multiple clicks) R to restart game.
       objectReference: {fileID: 0}
     - target: {fileID: 1612546444313868477, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_fontSize
