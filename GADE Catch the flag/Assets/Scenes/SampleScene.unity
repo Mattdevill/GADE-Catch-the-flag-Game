@@ -4595,7 +4595,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1612546444313868477, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_text
-      value: E to pick up. Q to drop.
+      value: E to pick up. (May need multiple clicks).
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612546444313868477, guid: 98335ed884142014583a153a9c49f600, type: 3}
+      propertyPath: m_fontSize
+      value: 20.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612546444313868477, guid: 98335ed884142014583a153a9c49f600, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20.49
       objectReference: {fileID: 0}
     - target: {fileID: 1676505234180597540, guid: 98335ed884142014583a153a9c49f600, type: 3}
       propertyPath: m_Layer
